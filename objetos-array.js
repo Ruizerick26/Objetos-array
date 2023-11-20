@@ -74,3 +74,27 @@ const informacionSocial = {
 const informacionCompleta = { ...informacionPersonal, ...informacionSocial };
 
 console.log(informacionCompleta);
+
+//nombres abreviados de propiedades
+let nombre = "Eli"
+let edad = 29
+let estatura = 1.68
+let email = "elinavarroh@gmail.com"
+
+const persona = {
+    nombre,
+    edad,
+    estatura,
+    email
+}
+
+console.log(persona)
+
+//array fundamentos
+let celulares = ["Samsung", "iPhone", "Huawei", "Xiaomi"]
+let notas = [15.6,14,12,18,11]
+let persona1 = ["Eli", 29, 1.68, "elinavarroh@gmail.com"]
+
+console.log(celulares)
+console.log("Cantidad de notas:", notas.length)
+console.log(persona1[0])
