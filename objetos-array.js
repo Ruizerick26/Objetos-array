@@ -81,14 +81,14 @@ let edad = 29
 let estatura = 1.68
 let email = "elinavarroh@gmail.com"
 
-const persona = {
+const persona_1 = {
     nombre,
     edad,
     estatura,
     email
 }
 
-console.log(persona)
+console.log(persona_1)
 
 //array fundamentos
 let celulares = ["Samsung", "iPhone", "Huawei", "Xiaomi"]
