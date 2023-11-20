@@ -157,3 +157,84 @@ let Persona = {
     
     // Llamar al método saludar
     Persona.saludar();
+
+//FOR.. IN 
+var persona = { nombre: "FERNANDO", edad: 23, ciudad: "CUENCA" };
+
+for (const atributo in persona) {
+  if (persona.hasOwnProperty(atributo)) {
+    console.log(`persona.${atributo} = ${persona[atributo]}`);
+  }
+}
+
+
+//FOR ...OF
+const estudiantes = [
+   
+    { nombre: "Ana", edad: 22 },
+    { nombre: "Juan", edad: 25 },
+    { nombre: "Elena", edad: 20 }
+  ];
+  
+  for (const estudiante of estudiantes) {
+    console.log(`Estudiante ${estudiante.nombre} tiene ${estudiante.edad} años.`);
+  }
+
+//Métodos:
+
+'use strict';
+ const general= ["Carrera: Sistemas","Nombre: Cristian","Apellido: Paredes" ,{ciudad:"Quito"}] 
+const datos = ["17278956273","Ecuatoriano"] 
+const titulo ="DATOS PERSONALES" 
+
+//push() Agrega al final del arreglo 
+general.push(datos) 
+
+//unshif() Agregar al inicio del arreglo 
+general.unshift(titulo) ;
+console.log(general);
+
+
+//pop() – Remueve un elemento del final del arreglo.
+
+let Deportes = ["Futboll", "Voley", "Basquet", "Tenis"];
+
+console.log("Array inicial:", Deportes);
+
+const Eliminar = Deportes.pop();
+
+console.log("Deporte eliminado:", Eliminar);
+console.log("Array después de pop():", Deportes);
+
+
+//shift()-  Remueve un elemento del principio del arreglo.
+
+const Eliminar2 = Deportes.shift();
+console.log("Deporte eliminado Inicio:", Eliminar2);
+console.log("Array Final ",Deportes)
+
+//slice() – Crea una copia sombra del arreglo.
+
+let colores = ["rojo", "verde", "azul", "amarillo", "morado", "naranja"];
+let coloresSeleccionados = colores.slice(1, 5);
+
+console.log("Array inicial:", colores);
+console.log("Colores seleccionados:", coloresSeleccionados);
+
+//Array.isArray() – Determina si el valor es un arreglo.
+
+let Array1 = ["cris", 2, 3, 4, 5];//si cambia por () este no seria un array
+
+if (Array.isArray(Array1)) {
+  console.log("La variable es un array.");
+} else {
+  console.log("La variable no es un array.");
+}
+
+//length – Determina el tamaño del arreglo.
+let frutas = ["manzana", "banana", "uva", "pera","sandia","naranja"];
+
+console.log("Array inicial:", frutas);
+console.log("Longitud del array:", frutas.length);
+
+
