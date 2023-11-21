@@ -1,3 +1,47 @@
+
+//Fundamentos y destructuración
+const fruta = {
+    nombre: "Manzana",
+    color: "Rojo",
+    tipo: "Fruta",
+    detalles: {
+      vitaminas: ["Vitamina C", "Vitamina A"],
+      origen: "Árbol frutal",
+      sabor: "Dulce"
+    },
+    precio: 1.5,
+    estaDisponible: true,
+    obtenerInfo() {
+      return `Una ${this.nombre} de color ${this.color} y sabor ${this.detalles.sabor}.`;
+    }
+  };
+  
+  console.log(fruta.obtenerInfo());
+  console.log("Vitaminas:", fruta.detalles.vitaminas);
+  console.log("Precio:", fruta.precio);
+  console.log("¿Está disponible?", fruta.estaDisponible);
+
+//DESESTRUCTURACION
+const persona = {
+  nombre: "Ana",
+  apellido: "García",
+  edad: 30,
+  direccion: {
+    ciudad: "Madrid",
+    codigoPostal: "28001"
+  }
+};
+
+// Desestructuración de un objeto
+const { nombre, apellido, edad, direccion: { ciudad, codigoPostal } } = persona;
+
+console.log(nombre); 
+console.log(apellido); 
+console.log(edad); 
+console.log(ciudad); 
+console.log(codigoPostal); 
+
+
 //Rest vs Spread
 
 //rest operator
