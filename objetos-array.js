@@ -237,4 +237,13 @@ let frutas = ["manzana", "banana", "uva", "pera","sandia","naranja"];
 console.log("Array inicial:", frutas);
 console.log("Longitud del array:", frutas.length);
 
+//Destructuración
+const Raza_perro = ["Doberman","chihuaha","Pitbull","Coquer","Dogo argentino"]
+const[grande,pequeño,mediano,orejon,fuerte] = Raza_perro
+console.log(grande)
+console.log(pequeño)
+console.log(mediano)
+console.log(orejon)
+console.log(fuerte)
+
 
