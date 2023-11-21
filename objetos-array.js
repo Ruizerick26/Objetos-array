@@ -22,7 +22,7 @@ const fruta = {
   console.log("¿Está disponible?", fruta.estaDisponible);
 
 //DESESTRUCTURACION
-const persona = {
+const persona_01 = {
   nombre: "Ana",
   apellido: "García",
   edad: 30,
@@ -33,7 +33,7 @@ const persona = {
 };
 
 // Desestructuración de un objeto
-const { nombre, apellido, edad, direccion: { ciudad, codigoPostal } } = persona;
+const { nombre, apellido, edad, direccion: { ciudad, codigoPostal } } = persona_01;
 
 console.log(nombre); 
 console.log(apellido); 
@@ -120,8 +120,8 @@ const informacionCompleta = { ...informacionPersonal, ...informacionSocial };
 console.log(informacionCompleta);
 
 //nombres abreviados de propiedades
-let nombre = "Eli"
-let edad = 29
+nombre = "Eli"
+edad = 29
 let estatura = 1.68
 let email = "elinavarroh@gmail.com"
 
